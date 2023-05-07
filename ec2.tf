@@ -14,6 +14,13 @@ provider "aws" {
   region  = "eu-west-2"
 }
 
+terraform {
+  backend "s3" {
+    bucket         = "my-backend-2"
+    key            = "my-backend-1/terraform/terraform.tfstate" #remote location
+    region         = "eu-west-2"
+    dynamodb_table = "my-bucket-2-table"
+  }
 # Resource Block
 
 resource "aws_instance" "ec2demo" {
@@ -21,6 +28,7 @@ resource "aws_instance" "ec2demo" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "OTILLIA-SERVER"
+    Name = "OTILLIA-SERVER2"
   }
+ }
 }
