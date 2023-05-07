@@ -25,7 +25,7 @@ resource "aws_instance" "ec2demo" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "OTILLIA-SERVER2"
+    Name = "OTILLIA-SERVER1"
   }
  }
 
