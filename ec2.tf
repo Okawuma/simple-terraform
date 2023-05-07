@@ -19,7 +19,7 @@ terraform {
     region         = "eu-west-2"
     dynamodb_table = "my-bucket-2-table"
   }
-
+}
 resource "aws_instance" "ec2demo" {
   ami           = "ami-09744628bed84e434"
   instance_type = "t2.micro"
@@ -28,4 +28,4 @@ resource "aws_instance" "ec2demo" {
     Name = "OTILLIA-SERVER2"
   }
  }
-}
+
