@@ -17,7 +17,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket         = "my-backend-2"
-    key            = "my-backend-1/terraform/terraform.tfstate" #remote location
+    key            = "my-backend-2/terraform/terraform.tfstate" #remote location
     region         = "eu-west-2"
     dynamodb_table = "my-bucket-2-table"
   }
