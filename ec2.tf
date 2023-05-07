@@ -22,7 +22,7 @@ terraform {
 }
 resource "aws_instance" "Archie" {
   ami           = "ami-0cbf73a24cc7ff66b"
-  instance_type = "t2.micro"
+  instance_type = "mac1.metal"
 
   tags = {
     Name = "BUCKET-SERVER"
