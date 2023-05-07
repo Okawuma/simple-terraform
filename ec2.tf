@@ -20,12 +20,12 @@ terraform {
     dynamodb_table = "my-bucket-2-table"
   }
 }
-resource "aws_instance" "ec2demo" {
-  ami           = "ami-09744628bed84e434"
+resource "aws_instance" "ec2demot" {
+  ami           = "ami-0cbf73a24cc7ff66b"
   instance_type = "t2.micro"
 
   tags = {
-    Name = "OTILLIA-SERVER1"
+    Name = "BUCKET-SERVER"
   }
  }
 
