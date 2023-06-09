@@ -17,7 +17,7 @@ terraform {
     bucket         = "my-backend-bucket1"
     key            = "my-backend-bucket1/terraform/terraform.tfstate" 
     region         = "eu-west-2"
-    dynamodb_table = "my-bucketable-2"
+    dynamodb_table = "my-bucketable-1"
   }
 }
 resource "aws_instance" "Archie" {
